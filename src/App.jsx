@@ -7,7 +7,6 @@ const App = () => {
   const [selectedUser, setSelectedUser] = useState(null);
   const [search, setSearch] = useState("");
   const [sortOrder, setSortOrder] = useState("asc");
-
   useEffect(() => {
     axios.get("https://dummyapi-node.onrender.com/api/users")
       .then((response) => setUsers(response.data))
